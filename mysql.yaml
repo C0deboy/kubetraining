@@ -1,109 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  creationTimestamp: '2023-04-19T09:49:42Z'
-  generation: 27
-  managedFields:
-    - apiVersion: argoproj.io/v1alpha1
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:status:
-          f:health:
-            f:status: {}
-          f:history: {}
-          f:operationState:
-            .: {}
-            f:finishedAt: {}
-            f:message: {}
-            f:operation:
-              .: {}
-              f:initiatedBy:
-                .: {}
-                f:automated: {}
-              f:retry:
-                .: {}
-                f:limit: {}
-              f:sync:
-                .: {}
-                f:revision: {}
-                f:syncOptions: {}
-            f:phase: {}
-            f:startedAt: {}
-            f:syncResult:
-              .: {}
-              f:resources: {}
-              f:revision: {}
-              f:source:
-                .: {}
-                f:chart: {}
-                f:helm:
-                  .: {}
-                  f:values: {}
-                f:repoURL: {}
-                f:targetRevision: {}
-          f:reconciledAt: {}
-          f:resources: {}
-          f:sourceType: {}
-          f:summary:
-            f:images: {}
-          f:sync:
-            f:comparedTo:
-              f:destination:
-                f:namespace: {}
-                f:server: {}
-              f:source:
-                f:chart: {}
-                f:helm:
-                  .: {}
-                  f:values: {}
-                f:repoURL: {}
-                f:targetRevision: {}
-            f:revision: {}
-            f:status: {}
-      manager: argocd-application-controller
-      operation: Update
-      time: '2023-04-19T09:58:46Z'
-    - apiVersion: argoproj.io/v1alpha1
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:spec:
-          .: {}
-          f:destination:
-            .: {}
-            f:namespace: {}
-            f:server: {}
-          f:project: {}
-          f:source:
-            .: {}
-            f:chart: {}
-            f:helm:
-              .: {}
-              f:values: {}
-            f:repoURL: {}
-            f:targetRevision: {}
-          f:syncPolicy:
-            .: {}
-            f:automated:
-              .: {}
-              f:selfHeal: {}
-            f:syncOptions: {}
-        f:status:
-          .: {}
-          f:health: {}
-          f:summary: {}
-          f:sync:
-            .: {}
-            f:comparedTo:
-              .: {}
-              f:destination: {}
-              f:source: {}
-      manager: argocd-server
-      operation: Update
-      time: '2023-04-19T09:59:39Z'
   name: mysql
   namespace: argocd
-  resourceVersion: '32703'
-  uid: f6c82998-be5f-488d-b02a-0160870e181c
 spec:
   destination:
     namespace: guestbook
@@ -1479,8 +1378,6 @@ spec:
     syncOptions:
       - CreateNamespace=true
 status:
-  health:
-    status: Progressing
   history:
     - deployStartedAt: '2023-04-19T09:49:56Z'
       deployedAt: '2023-04-19T09:49:57Z'
